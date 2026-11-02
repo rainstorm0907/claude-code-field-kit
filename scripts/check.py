@@ -6,6 +6,10 @@ from pathlib import Path
 root = Path(__file__).resolve().parent.parent
 skills = root / 'skills'
 names = {p.name for p in skills.iterdir() if (p / 'SKILL.md').exists()}
+# Skills this kit deliberately leaves out; a backticked mention would route nowhere.
+left_out = {'agent-taskforce', 'code-reviewer', 'work-intent', 'dispatching', 'dispatched',
+            'model-guide', 'claude-prompting-lab', 'product-reframing', 'frontend-ux-router',
+            'frontend-design', 'humanize-korean', 'insane-search', 'stack-diagram', 'mood'}
 errors = []
 
 for d in sorted(names):
@@ -16,10 +20,13 @@ for d in sorted(names):
     if not re.search(r'^description:', head, re.M):
         errors.append(f'{d}/SKILL.md: missing description')
 
-files = [f for f in skills.rglob('*.md')] + list((root / 'agents').glob('*.md'))
+files = list(skills.rglob('*.md'))
 for f in files:
     text = f.read_text()
     rel = f.relative_to(root)
+    for m in re.finditer(r'`([\w-]+)`', text):
+        if m.group(1) in left_out:
+            errors.append(f'{rel}: `{m.group(1)}` is not in this kit')
     for m in re.finditer(r'Skill\(([\w-]+)\)', text):
         if m.group(1) not in names:
             errors.append(f'{rel}: Skill({m.group(1)}) is not in this kit')

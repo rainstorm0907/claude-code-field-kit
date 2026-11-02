@@ -21,6 +21,6 @@ If new material refutes the recommendation, change that choice; if it is only a 
 
 If you were given discussion, return with judgment and a recommendation; if planning, with a design that fits the actual material; if production, with the permitted result. Selecting candidates for judgment and basic preparation are the owner's job; the user's impressions and material adoption are the user's. Do not end every answer with a question or pad it with options.
 
-Use `metaframe` as a helper only when the current interpretation and observations keep diverging. Product investment and freeze changes belong to `product-framing`, re-researching the product concept itself to `product-reframing`, and building screens to `frontend-ux-router`. Reading a skill does not change the current owner or authority.
+Use `metaframe` as a helper only when the current interpretation and observations keep diverging. Product investment and freeze changes belong to `product-framing`. Reading a skill does not change the current owner or authority.
 
 Read only the parts that need a deeper distinction in [principles for judging together](references/co-thinking.md).

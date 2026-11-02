@@ -19,7 +19,7 @@ Keep the user's original idea and the owner's candidates distinct, and compare t
 
 The model investigates checkable facts, points out contradictions and makes reasoned recommendations. The user decides personal experience, values and material commitments. The user being convinced does not prove an outside fact, and the model writing something does not make it E0 evidence. Keep the source of a proposal, its evidence grade, its adoption and permission to execute separate.
 
-When candidates differ only in name and share the same product premise, use `product-reframing` to compare a different concept against real evidence; `metaframe` re-reads the current task or approach, not the product concept. Keeping the current direction and doing nothing are also comparable options. Read the relevant part of `../discusser/references/co-thinking.md` only when interpreting what the user said actually decides the outcome, and do not change the primary owner.
+When candidates differ only in name and share the same product premise, compare a genuinely different concept against real evidence instead of renaming; `metaframe` re-reads the current task or approach, not the product concept. Keeping the current direction and doing nothing are also comparable options. Read the relevant part of `../discusser/references/co-thinking.md` only when interpreting what the user said actually decides the outcome, and do not change the primary owner.
 
 Check a new objection against the facts; do not repeat the same objection without new evidence. Record remaining disagreement separately from what is currently adopted. Do not waive the approval and protection conditions below just to close the conversation.
 
@@ -101,7 +101,7 @@ Put the actual document at `docs/frame/<frame_id>.md` and the provided original 
 If an authoritative file already preserves the original idea, reference it without distorting the original text.
 The short PROBE path and the conditions for skipping `FRAME_LOCK` follow the existing contract.
 
-Implementers do not make the user define the product again. `dispatching` passes fixed conditions and provisional methods separately.
+Implementers do not make the user define the product again. A brief to an implementer passes fixed conditions and provisional methods separately.
 Screens and interaction feel follow the owner's actual-run verification and the user-judgment rules.
 
 Learning inside variable elements updates the §6 cycle. Keep earlier results reachable through `prior_cycle_ref`;
