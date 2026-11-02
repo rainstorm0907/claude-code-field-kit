@@ -1,19 +1,19 @@
 ---
 name: dispatching
-description: "Handing work to another session, or sending the next task to an existing one: decide continue-versus-fresh, separate binding from hints, carry scale and return contract, handle blocks and short returns. Read before handing a real task to a subagent or teammate, or sending one a follow-up; not for a quick file search. Before a second session toward the same goal, read agent-taskforce too."
+description: "Handing work to another session, or sending the next task to an existing one: decide continue-versus-fresh, separate binding from hints, carry scale and return contract, handle blocks and short returns. Read before handing a real task to a subagent or teammate, or sending one a follow-up; not for a quick file search."
 ---
 
 # Dispatching
 
 Run this when you are about to hand work to another session (a teammate, a subagent, a freehand worker on any lane), and when you are about to send the next task to a session that already exists. It shapes the brief you are composing and the choice of who receives it; it is not a template to fill.
 
-In Claude Code, `../agent-taskforce/runtimes/claude-code.md` maps spawning, continuing an agent and team roles to the actual tools; this skill remains the brief contract.
+In Claude Code, the Agent tool starts a subagent and `SendMessage` to its agent ID continues it; this skill shapes the brief.
 
 ## Is a separate session worth it
 
 Name what the separate session contributes and what stays with you. Weigh that against briefing, duplicate reading, result integration, waiting and shared-resource contention, not token volume alone; a cheaper model being available is not a saving by itself. Coupled judgment and implementation can stay in one strong session, and a subagent still reasons inside its assignment.
 
-A focused subagent, or an owner delegating inside its accepted boundary, needs no team ceremony. A root lead about to send a second session toward the same goal, or holding work that splits into outcomes that can move on their own, reads Skill(agent-taskforce) first.
+A focused subagent needs no team ceremony.
 
 ## What binds, and what is a lead
 

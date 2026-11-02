@@ -2,7 +2,7 @@
 name: frontend-design
 description: |
   Visual frontend design subrouter. Use when `frontend-ux-router` routes visual execution here, or when the user explicitly asks for visual UI design, frontend code polish, layout, spacing, typography, color, icons, component polish, landing/hero/marketing visuals, accessibility visual checks, interaction-state visuals, or web interface guideline review.
-  Do not use for architecture/plan risk review; route that to code-reviewer.
+  Do not use for architecture/plan risk review.
   Supports multi-guide execution for complex requests.
   For broad UI/UX, product feel, usability, flow, state, navigation, or Korean feel-language requests such as "뭔가 별로", "감성없다", "기존 제품 느낌이 아니다", "네이버지도처럼", or "라벨이 안 따라다녀", use `frontend-ux-router` first.
 ---
@@ -42,7 +42,7 @@ This skill is visual/frontend-focused. If the request is about broader UX, produ
 
 For 지도/캔버스/미디어/실시간 UI, visual styling is not enough when the issue is native-feeling interaction quality. Route through `frontend-ux-router` so layer fit, state, and heuristic checks happen before visual polish.
 
-For architecture, migration, data-flow, security, or plan-risk review, do not run this router. Use `code-reviewer` instead.
+For architecture, migration, data-flow, security, or plan-risk review, do not run this router; review it directly.
 
 ## Execution
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install the kit into Claude Code: skills -> ~/.claude/skills, agents -> ~/.claude/agents.
+# Install the kit into Claude Code: skills -> ~/.claude/skills.
 # Default links to this checkout so `git pull` updates everything. --copy copies instead.
 set -euo pipefail
 
@@ -23,11 +23,9 @@ place() { # src dest
   echo "  + $(basename "$dest")"
 }
 
-mkdir -p "$claude_dir/skills" "$claude_dir/agents"
+mkdir -p "$claude_dir/skills"
 echo "skills -> $claude_dir/skills"
 for s in "$root"/skills/*/; do s="${s%/}"; place "$s" "$claude_dir/skills/$(basename "$s")"; done
-echo "agents -> $claude_dir/agents"
-for a in "$root"/agents/*.md; do place "$a" "$claude_dir/agents/$(basename "$a")"; done
 
 echo
 echo "Done ($mode). Open a new Claude Code session to load them."

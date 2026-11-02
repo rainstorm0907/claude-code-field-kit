@@ -23,4 +23,4 @@ If you were given discussion, return with judgment and a recommendation; if plan
 
 Use `metaframe` as a helper only when the current interpretation and observations keep diverging. Product investment and freeze changes belong to `product-framing`, re-researching the product concept itself to `product-reframing`, and building screens to `frontend-ux-router`. Reading a skill does not change the current owner or authority.
 
-Read only the parts that need a deeper distinction in [principles for judging together](references/co-thinking.md). When you need more about actual differences in responses and work, see [comparison cases](references/calibration-cases.md).
+Read only the parts that need a deeper distinction in [principles for judging together](references/co-thinking.md).
